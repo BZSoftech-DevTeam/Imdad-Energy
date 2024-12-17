@@ -5,7 +5,7 @@ import { Toaster } from 'react-hot-toast';
 
 import Loader from './components/Loader';
 import Header from './components/Header'
-import Hero from './Pages/Home/HeroSection';
+import Home from './Pages/Home/HomeContainer';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -25,7 +25,7 @@ function App() {
     <>
       <Header></Header>
       <Routes>
-        <Route path='/' element={<Hero />} />
+        <Route path='/' element={<HomeContainer />} />
       </Routes>
       <Toaster />
     </>
